@@ -44,7 +44,7 @@ The data was split in the following way:
 
 This is the architecture that I've built:
 
-![Neural Network Architecture](convnet_architecture.jpg)
+![Neural Network Architecture]![Screenshot 2024-03-01 110315](https://github.com/ShyleshKumarS/Brain_Tumour_Detection/assets/146239672/5dbcbbbc-a760-457b-99c2-4701bd816e1a)
 
 **Understanding the architecture:**<br>
 Each input x (image) has a shape of (240, 240, 3) and is fed into the neural network. And, it goes through the following layers:<br>
