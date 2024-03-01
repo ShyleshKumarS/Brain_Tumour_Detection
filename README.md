@@ -72,7 +72,10 @@ The model was trained for 24 epochs and these are the loss & accuracy plots:
 
 
 
-![Accuracy plot](Accuracy.PNG)
+
+
+![Screenshot 2024-03-01 110803](https://github.com/ShyleshKumarS/Brain_Tumour_Detection/assets/146239672/30e4756c-d951-4d08-b3ab-490e6686be32)
+
 
 The best validation accuracy was achieved on the 23rd iteration.
 
