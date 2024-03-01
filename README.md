@@ -66,7 +66,10 @@ Each input x (image) has a shape of (240, 240, 3) and is fed into the neural net
 The model was trained for 24 epochs and these are the loss & accuracy plots:
 
 
-![Loss plot](Loss.PNG)
+
+![Screenshot 2024-03-01 110756](https://github.com/ShyleshKumarS/Brain_Tumour_Detection/assets/146239672/0e295faf-a332-4e7d-a0df-4ca9d81bf9ef)
+
+
 
 
 ![Accuracy plot](Accuracy.PNG)
