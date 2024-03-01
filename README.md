@@ -58,11 +58,8 @@ Each input x (image) has a shape of (240, 240, 3) and is fed into the neural net
 7. A flatten layer in order to flatten the 3-dimensional matrix into a one-dimensional vector.
 8. A Dense (output unit) fully connected layer with one neuron with a sigmoid activation (since this is a binary classification task).
 
-**Why this architecture?**<br>
 
-Firstly, I applied transfer learning using a ResNet50 and vgg-16, but these models were too complex to the data size and were overfitting. Of course, you may get good results applying transfer learning with these models using data augmentation. But, I'm using training on a computer with 6th generation Intel i7 CPU and 8 GB memory. So, I had to take into consideration computational complexity and memory limitations.<br>
 
-So why not try a simpler architecture and train it from scratch. And it worked :)
 
 # Training the model
 The model was trained for 24 epochs and these are the loss & accuracy plots:
