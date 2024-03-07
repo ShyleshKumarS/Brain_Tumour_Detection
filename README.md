@@ -7,7 +7,7 @@ The dataset contains 2 folders: yes and no which contains 253 Brain MRI Images. 
 
 # Getting Started
 
-**Note:** sometimes viewing IPython notebooks using GitHub viewer doesn't work as expected, so you can always view them using [nbviewer](https://nbviewer.jupyter.org/).
+
 
 ## Data Augmentation:
 
