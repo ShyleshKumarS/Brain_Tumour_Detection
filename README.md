@@ -7,7 +7,7 @@ The dataset contains 2 folders: yes and no which contains 253 Brain MRI Images. 
 
 # Getting Started
 
-**Note:** sometimes viewing IPython notebooks using GitHub viewer doesn't work as expected, so you can always view them using [nbviewer](https://nbviewer.jupyter.org/).
+
 
 ## Data Augmentation:
 
@@ -44,7 +44,8 @@ The data was split in the following way:
 
 This is the architecture that I've built:
 
-![Neural Network Architecture](convnet_architecture.jpg)
+![Screenshot 2024-03-01 110328](https://github.com/ShyleshKumarS/Brain_Tumour_Detection/assets/146239672/00298487-4403-4733-b265-257121220a24)
+
 
 **Understanding the architecture:**<br>
 Each input x (image) has a shape of (240, 240, 3) and is fed into the neural network. And, it goes through the following layers:<br>
@@ -58,30 +59,26 @@ Each input x (image) has a shape of (240, 240, 3) and is fed into the neural net
 7. A flatten layer in order to flatten the 3-dimensional matrix into a one-dimensional vector.
 8. A Dense (output unit) fully connected layer with one neuron with a sigmoid activation (since this is a binary classification task).
 
-**Why this architecture?**<br>
 
-Firstly, I applied transfer learning using a ResNet50 and vgg-16, but these models were too complex to the data size and were overfitting. Of course, you may get good results applying transfer learning with these models using data augmentation. But, I'm using training on a computer with 6th generation Intel i7 CPU and 8 GB memory. So, I had to take into consideration computational complexity and memory limitations.<br>
 
-So why not try a simpler architecture and train it from scratch. And it worked :)
 
 # Training the model
 The model was trained for 24 epochs and these are the loss & accuracy plots:
 
 
-![Loss plot](Loss.PNG)
+
+![Screenshot 2024-03-01 110756](https://github.com/ShyleshKumarS/Brain_Tumour_Detection/assets/146239672/0e295faf-a332-4e7d-a0df-4ca9d81bf9ef)
 
 
-![Accuracy plot](Accuracy.PNG)
+
+
+
+
+![Screenshot 2024-03-01 110803](https://github.com/ShyleshKumarS/Brain_Tumour_Detection/assets/146239672/30e4756c-d951-4d08-b3ab-490e6686be32)
+
 
 The best validation accuracy was achieved on the 23rd iteration.
 
-# Results
-
-Now, the best model (the one with the best validation accuracy) detects brain tumor with:<br>
-
-**88.7%** accuracy on the **test set**.<br>
-**0.88** f1 score on the **test set**.<br>
-These resutls are very good considering that the data is balanced.
 
 **Performance table of the best model:**
 
@@ -91,21 +88,6 @@ These resutls are very good considering that the data is balanced.
 | F1 score  | 0.91           | 0.88     |
 
 
-# Final Notes
-
-What's in the files?
-
-1. The code in the IPython notebooks.
-2. The weights for all the models. The best model is named as 'cnn-parameters-improvement-23-0.91.model'.
-3. The models are stored as *.model* files. They can be restored as follows:
-
-
-```
-from tensorflow.keras.models import load_model
-best_model = load_model(filepath='models/cnn-parameters-improvement-23-0.91.model')
-```
-
-4. The original data in the folders named 'yes' and 'no'. And, the augmented data in the folder named 'augmented data'.
 
 
 Contributes are welcome!
@@ -113,4 +95,3 @@ Contributes are welcome!
 
 
 
-"# Brain_Tumour_Detection" 
